@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>标签页管家</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>标签页管家</h1>
+      <p class="subtitle">轻松导出与导入您的浏览进度</p>
+    </div>
+    
+    <div class="actions">
+      <button id="exportBtn" class="btn primary-btn">
+        <span class="icon">📤</span> 导出当前标签页
+      </button>
+      
+      <label for="importFile" class="btn secondary-btn">
+        <span class="icon">📥</span> 导入标签页文件
+      </label>
+      <input type="file" id="importFile" accept=".txt" />
+    </div>
+
+    <div id="status" class="status-message"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

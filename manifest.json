@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "优雅标签页管家",
+  "version": "1.0",
+  "description": "一键导出当前窗口所有标签页，或按顺序延迟导入标签页。",
+  "permissions": [
+    "tabs",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
